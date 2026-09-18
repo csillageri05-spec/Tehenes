@@ -1,0 +1,62 @@
+.zene {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-shadow: var(--shadow);
+  text-align: left;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.zene:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 20px -4px rgba(0, 0, 0, 0.15);
+}
+
+.zene h2 {
+  font-size: 20px;
+  margin: 0 0 4px 0;
+  color: var(--text-h);
+  line-height: 1.2;
+}
+
+.zene p {
+  margin: 0;
+  color: var(--text);
+  font-size: 15px;
+}
+
+.zene span {
+  font-weight: 600;
+  color: var(--text-h);
+}
+
+.zene .leiras {
+  font-size: 14px;
+  font-style: italic;
+  margin-top: 8px;
+  flex-grow: 1; /* Ezzel érjük el, hogy a gomb mindig az aljára kerüljön */
+}
+
+.zene button {
+  align-self: flex-start;
+  margin-top: 16px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: 1px solid var(--accent-border);
+  background: var(--accent-bg);
+  color: var(--accent);
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.zene button:hover {
+  background: var(--accent);
+  color: #fff;
+}
